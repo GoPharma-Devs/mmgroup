@@ -18,8 +18,14 @@ span {
   height: 10vmin;
   pointer-events: none;
 }
-
+body {
+  box-sizing: border-box;
+}
 .App-header {
+  background-image: url('./img/bg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   background-color: #000000;
   min-height: 100vh;
   display: flex;
@@ -28,10 +34,6 @@ span {
   justify-content: space-around;
   font-size: calc(10px + 2vmin);
   color: white;
-  background-image: url('./img/bg.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .App-link {
@@ -45,13 +47,20 @@ span {
   align-items: flex-start;
   justify-content: center;
   text-align: left;
+  padding: 1rem;
 }
 .contenedor-img {
+  padding: 1rem;
   width: 100%;
   display: flex;
+  flex-flow: row;
   align-items: center;
   justify-content: space-evenly;
+  @media (max-width: 768px) {
+    flex-flow: column;
+  }
   img {
-    max-width: 215px;
+    margin: 1rem;
+    max-width: 190px;
   }
 }

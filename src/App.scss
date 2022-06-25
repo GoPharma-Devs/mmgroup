@@ -12,6 +12,7 @@ span {
 .App {
   font-family: mmgroupItalic;
   text-align: center;
+  box-sizing: border-box;
 }
 
 .App-logo {
@@ -30,25 +31,31 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-around;
   font-size: calc(10px + 2vmin);
+  height: 100% auto;
   color: white;
+  box-sizing: border-box;
+  padding: 1rem;
+  .contenedor {
+    flex-flow: column;
+    display: flex;
+    max-width: 1080px;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    text-align: left;
+    max-width: 1080px;
+    margin: auto;
+    text-align: left !important;
+    width: 100%;
+  }
 }
 
 .App-link {
   color: #61dafb;
 }
 
-.contenedor {
-  flex-flow: column;
-  display: flex;
-  max-width: 1080px;
-  align-items: flex-start;
-  justify-content: center;
-  text-align: left;
-  padding: 1rem;
-}
 .contenedor-img {
   padding: 1rem;
   width: 100%;
@@ -56,6 +63,7 @@ body {
   flex-flow: row;
   align-items: center;
   justify-content: space-evenly;
+  box-sizing: border-box;
   @media (max-width: 768px) {
     flex-flow: column;
   }
@@ -63,4 +71,63 @@ body {
     margin: 1rem;
     max-width: 190px;
   }
+}
+
+.form-section {
+  background-image: url('./img/bg-formd.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #000000;
+  min-height: 100vh;
+  height: 100% auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  text-align: left;
+  box-sizing: border-box;
+  padding: 1rem;
+  .contenedor {
+    width: 100%;
+    margin: auto;
+    max-width: 1080px;
+    text-align: left !important;
+    box-sizing: border-box;
+  }
+  form {
+    box-sizing: border-box;
+    margin: auto;
+    font-family: mmgroup;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-flow: column;
+    width: 100%;
+    max-width: 700px;
+    .group-form {
+      box-sizing: border-box;
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+    input,
+    textarea {
+      font-family: mmgroup;
+      padding: 0.5rem;
+      width: 90%;
+      margin: auto;
+      outline: none;
+      border: none;
+      border-radius: 0.2rem;
+    }
+  }
+}
+.btn-submit {
+  font-family: mmgroup;
+  padding: 10px 2rem;
+  border-radius: 0.2rem;
+  outline: none;
+  border: none;
 }

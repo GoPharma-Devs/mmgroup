@@ -6,6 +6,10 @@ import './App.scss';
 import { useState } from 'react';
 import Axios from 'axios';
 function App() {
+  // Return today's date and time
+  var currentTime = new Date();
+
+  var year = currentTime.getFullYear();
   const url = '';
   const [data, dataSet] = useState({
     name: '',
@@ -99,6 +103,9 @@ function App() {
             </button>
           </form>
         </div>
+        <small>
+          Copyright<sup>©</sup> Marketing and Media<sup>®</sup><br/> All rights reserved {year}.
+        </small>
       </section>
     </div>
   );

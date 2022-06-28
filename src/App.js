@@ -34,7 +34,6 @@ function App() {
     const newdata = { ...data };
     newdata[e.target.id] = e.target.value;
     dataSet(newdata);
-    console.log(newdata);
   }
   return (
     <div className='App'>

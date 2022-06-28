@@ -9,6 +9,9 @@
 span {
   font-family: mmgroup;
 }
+html {
+  background-color: #000000;
+}
 .App {
   font-family: mmgroupItalic;
   text-align: center;
@@ -130,6 +133,11 @@ body {
   border-radius: 0.2rem;
   outline: none;
   border: none;
+  cursor: pointer;
+  &:hover {
+    background-color: #000000;
+    color: white;
+  }
 }
 
 small {

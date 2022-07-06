@@ -152,16 +152,12 @@ small {
   text-align: center;
 }
 
-
-
-.responsive{
+.responsive {
   display: none;
-
 }
 
 @media screen and (max-width: 768px) {
-  .responsive{
+  .responsive {
     display: block;
   }
 }
-  

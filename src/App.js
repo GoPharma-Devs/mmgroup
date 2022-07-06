@@ -41,7 +41,8 @@ function App() {
         <div className='contenedor'>
           <img src={logo} className='App-logo' alt='logo' />
           <h1>
-            We are <span>creative</span>,<br className='responsive' /> we are <span>specialized</span>,
+            We are <span>creative</span>,<br className='responsive' /> we are{' '}
+            <span>specialized</span>,
             <br /> We are <span>professionals</span>.
             <br /> We are <span>marketing</span> and <span>media</span>
           </h1>
